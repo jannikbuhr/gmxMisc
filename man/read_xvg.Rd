@@ -13,5 +13,5 @@ read_xvg(str)
 cleaned data  :: tibble
 }
 \description{
-And also cleanup and parse data
+And cleanup and parse data
 }

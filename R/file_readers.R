@@ -13,7 +13,7 @@ read_xvg <- function(str) {
       names_pattern = "r_(\\d+) (.)",
       names_to = c("r_id", ".value")
     ) %>%
-    tidyr::rename_with(tolower) %>%
+    dplyr::rename_with(tolower) %>%
     dplyr::mutate(across(.fns = parse_number))
 }
 
